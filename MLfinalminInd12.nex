@@ -44,7 +44,7 @@ Lset rates=gamma nst=6 rmatrix=estimate pinvar=estimate;
 log start file=ML.log;
 dset distance=logdet;
 set criterion=likelihood;
-hsearch start=stepwise addseq=random nreps=100 swap=TBR;
+hsearch start=stepwise addseq=random nreps=100 swap=NNI;
 describe/plot=p;
 savetrees file=ML.tre;
 savebootp=nodelabels;
