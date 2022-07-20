@@ -323,3 +323,15 @@ python vcf2phylip.py -i myresult_minInd12.vcf -p -n
 
 #see MLminind12.nex to see Maximum Likelihood GTR+I+G model parameters
 ##will add another nexus file for NJ
+
+
+###Now trying to look at the parameters for base calling
+
+#here is what we have been using
+FILTERS="-uniqueOnly 1 -remove_bads 1 -minMapQ 10 -minQ 25 -dosnpstat 1 -doHWE 1 -sb_pval 1e-5 -hetbias_pval 1e-5 -minInd 28 -snp_pval 1e-5 -minMaf 0.05"
+
+TODO="-doMajorMinor 1 -doMaf 1 -doCounts 1 -makeMatrix 1 -doIBS 1 -doCov 1 -doGeno 8 -doBcf 1 -doPost 1 -doGlf 2"
+
+
+#IBS = identity by state
+#MAF = minor allele frequency
